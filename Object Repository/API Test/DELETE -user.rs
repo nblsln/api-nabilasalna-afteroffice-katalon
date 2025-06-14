@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET-list-users</name>
+   <name>DELETE -user</name>
    <tag></tag>
-   <elementGuidId>10ebe99c-83e3-47a0-a69f-d81ed4bd8d5c</elementGuidId>
+   <elementGuidId>8488473f-3141-47a3-a823-8cd9e658b0f9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -19,14 +19,14 @@
       <name>x-api-key</name>
       <type>Main</type>
       <value>reqres-free-v1</value>
-      <webElementGuid>e7b442b5-4cd5-41e6-8624-b197183fa011</webElementGuid>
+      <webElementGuid>4cee1247-bc85-419a-9e38-b69bbc13c7e9</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.2.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.baseURL}/api/users?page=${paramPage}</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>${GlobalVariable.baseURL}/api/users/2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -35,13 +35,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>2</defaultValue>
-      <description></description>
-      <id>09886d5a-3dea-41f6-90d7-4c2a75553b47</id>
-      <masked>false</masked>
-      <name>paramPage</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
